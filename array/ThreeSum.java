@@ -28,4 +28,32 @@ public class ThreeSum {
         }
         return list;
     }
+
+    public static List<List<Integer>> threeSum_binarySearch(int[] num) {
+        List<List<Integer>> res = new ArrayList<>();
+        if (num == null || num.length < 3) return res;
+
+        Arrays.sort(num);
+        int one = 0;
+        int three = num.length - 1;
+        Set<List<Integer>> set = new HashSet<>();
+        while (one < three - 1)) {
+            int target = -(num[one] + num[three]);
+            int two = search(num, target, i + 1, num.length - 3)
+            if (two != -1) {
+                List<Integer> tri = Arrays.asList(num[one], num[two], num[three]);
+                if (set.add(tri)) {
+                    res.add(tri);
+                }
+                one++;
+                three--;
+            } else {
+                one++;
+            }
+        }
+    }
+
+    private static int search(int[] num, int target, int low, int high) {
+        if
+    }
 }
