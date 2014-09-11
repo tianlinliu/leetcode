@@ -9,7 +9,7 @@
  *     }
  * }
  */
-public class ReverseBetween {
+public class ReverseLinkedListII {
     public static ListNode reverseBetween(ListNode head, int m, int n) {
         ListNode dummy = new ListNode(-1);
         dummy.next = head;
