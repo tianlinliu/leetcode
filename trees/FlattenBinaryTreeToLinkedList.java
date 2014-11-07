@@ -18,7 +18,7 @@ public class FlattenBinaryTreeToLinkedList {
             flatten(root.left);
 
             TreeNode leftTail = root.left;
-            while (leftTail.right != null) {
+            while (leftTail.right != null) { // while loop in recursion?
                 leftTail = leftTail.right;
             }
 
