@@ -1,4 +1,4 @@
-public class Combinitions {
+public class Combinations {
     public List<List<Integer>> combine(int n, int k) {
         List<List<Integer>> result = new ArrayList<>();
         if (n < 1 || k > n) return result;
