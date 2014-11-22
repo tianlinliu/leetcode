@@ -7,10 +7,11 @@ public class GrayCode {
         if (n == 0) return result;
 
         result.add(1);
+        // first reverse previous list, then add the first digit, append it to the result list
         for (int i = 2; i <= n; i++) {
             List<Integer> reverse = reverseList(result);
             for (int j = 0; j < reverse.size(); j++) {
-                reverse.set(j, reverse.get(j) + (int)Math.pow(2, i - 1));
+                reverse.set(j, reverse.get(j) + (int)Math.pow(2, i - 1)); // Math.pow() => return type: double
             }
             result.addAll(reverse);
         }
